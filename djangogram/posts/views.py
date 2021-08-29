@@ -50,3 +50,7 @@ def post_create(request):
 
         else:
             return render(request, 'users/main.html')
+
+def my_page(request):
+    return render(request, 'MyPage/myPage.html')
+
