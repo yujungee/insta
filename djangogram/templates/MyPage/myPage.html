@@ -6,4 +6,29 @@
 <p><img src="/Users/yujeong/Desktop/pocha.jpeg" width="220" height="216" alt=""/> username following follower</p>
 <a href="{% url 'myPage:edit' %}"><button>edit</button></a>
 </div>
+
+<div>
+    <!-- Gallery -->
+  <div class="row">
+    <div class="col-md-12">
+      <div id="mdb-lightbox-ui"></div>
+      <div class="mdb-lightbox no-margin"></div>
+        <div class="row">
+          {% for post in posts %}
+          {% if post.author.id == request.user.id %}
+          <figure class="col-md-4">
+            <div style="width: 18rem;">
+              <img src="{{post.image}}" class="card-img-top" style="width: 300px"/>
+            </div>
+         </figure>
+          {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+    <div class="col"></div>
+  </div>
+  <!-- Gallery -->
+</div>
 {% endblock content %}
+
+
