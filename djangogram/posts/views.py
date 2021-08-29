@@ -54,5 +54,4 @@ def post_create(request):
 def my_page(request):
     return render(request, 'MyPage/myPage.html')
 
-def edit(request):
-    return render(request, 'MyPage/edit.html')
+

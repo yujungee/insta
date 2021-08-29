@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
+{% extends "posts/base.html" %}
 
-<body>
+{% block content %}
+
+<div>
 <p><img src="/Users/yujeong/Desktop/pocha.jpeg" width="220" height="216" alt=""/> username following follower</p>
-<a href="{% url 'posts:edit' %}"><button>edit</button></a>
-</body>
-</html>
+<a href="{% url 'myPage:edit' %}"><button>edit</button></a>
+</div>
+{% endblock content %}
