@@ -43,7 +43,7 @@ LOCALE_PATHS = [ROOT_DIR.path("locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://postgres:root@localhost:5432/djangogram")
+    "default": env.db("DATABASE_URL", default="postgres://postgres:yujung3044@localhost:5432/Django_project_bada")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
