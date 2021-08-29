@@ -54,3 +54,4 @@ def post_create(request):
 def my_page(request):
     return render(request, 'MyPage/myPage.html')
 
+
