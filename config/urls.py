@@ -21,8 +21,11 @@ urlpatterns = [
     # /myPage/
     path("myPage/", include("djangogram.myPage.urls", namespace="myPage")),
 
-    # /myPage/
+    # /Community/
     path("Community/", include("djangogram.Community.urls", namespace="Community")),
+
+    # /exercise/
+    path("exercise/", include("djangogram.exercise.urls", namespace="exercise")),
 
     # /posts/
     path("posts/", include("djangogram.posts.urls", namespace="posts")),

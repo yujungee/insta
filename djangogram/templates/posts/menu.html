@@ -7,10 +7,10 @@
         <li><a href="#" aria-label="subemnu">submenu</a></li>
       </ul>
 	</li>
-    <li><a href="#">exercise</a>
+    <li><a href="{% url 'exercise:start' %}">exercise</a>
       <ul class="sub-menu">
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
-        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="{% url 'exercise:routine' %}" aria-label="subemnu">routine</a></li>
+        <li><a href="{% url 'exercise:playlist' %}" aria-label="subemnu">playlist</a></li>
       </ul>
     </li>
     <li><a href="#">diet</a>
