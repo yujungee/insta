@@ -1,1 +1,9 @@
+{% load static %}
 Let's start exercise!
+<div class="btn">
+      <div class="playlist">
+          <a href="{% url 'exercise:playlist' %}">
+              <img src="{% static 'images/exercise/playlistBtn.png'%}" height="200" alt="playlistBtn">
+          </a>
+      </div>
+</div>
