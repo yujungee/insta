@@ -5,4 +5,4 @@ from djangogram.users.models import User as user_model
 
 # Create your views here.
 def diet(request):
-    return render(request, 'diet.html')
+    return render(request, 'diet/diet.html')
