@@ -21,6 +21,9 @@ urlpatterns = [
     # /myPage/
     path("myPage/", include("djangogram.myPage.urls", namespace="myPage")),
 
+    # /myPage/
+    path("Community/", include("djangogram.Community.urls", namespace="Community")),
+
     # /posts/
     path("posts/", include("djangogram.posts.urls", namespace="posts")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
