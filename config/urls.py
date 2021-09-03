@@ -20,7 +20,15 @@ urlpatterns = [
 
     # /posts/
     path("posts/", include("djangogram.posts.urls", namespace="posts")),
+
+    # /myPage/
+    path("myPage/", include("djangogram.myPage.urls", namespace="myPage")),
+
+    # /diet/
+    path("diet/", include("djangogram.diet.urls", namespace='diet')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
