@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('create_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now_add=True)),
                 ('image', models.ImageField(blank=True, upload_to='')),
-                ('cpation', models.TextField(blank=True)),
+                ('caption', models.TextField(blank=True)),
                 ('author', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='post_author', to=settings.AUTH_USER_MODEL)),
                 ('image_likes', models.ManyToManyField(related_name='post_image_likes', to=settings.AUTH_USER_MODEL)),
             ],

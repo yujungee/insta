@@ -18,6 +18,9 @@ urlpatterns = [
     # /
     path("", include("djangogram.users.urls", namespace="users")),
 
+    # /myPage/
+    path("myPage/", include("djangogram.myPage.urls", namespace="myPage")),
+
     # /posts/
     path("posts/", include("djangogram.posts.urls", namespace="posts")),
 
